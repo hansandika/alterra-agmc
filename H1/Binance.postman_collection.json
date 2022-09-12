@@ -191,7 +191,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://testnet.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1661947201&endTime=1662595199",
+					"raw": "https://testnet.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1661904001000&endTime=1662595199000",
 					"protocol": "https",
 					"host": [
 						"testnet",
@@ -214,12 +214,12 @@
 						},
 						{
 							"key": "startTime",
-							"value": "1661947201",
+							"value": "1661904001000",
 							"description": "Wednesday, August 31, 2022 12:00:01 PM"
 						},
 						{
 							"key": "endTime",
-							"value": "1662595199",
+							"value": "1662595199000",
 							"description": "Wednesday, September 7, 2022 11:59:59 PM"
 						}
 					]
@@ -232,7 +232,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://testnet.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1661947201&endTime=1662595199",
+							"raw": "https://testnet.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1661904001000&endTime=1662595199000",
 							"protocol": "https",
 							"host": [
 								"testnet",
@@ -255,12 +255,12 @@
 								},
 								{
 									"key": "startTime",
-									"value": "1661947201",
+									"value": "1661904001000",
 									"description": "Wednesday, August 31, 2022 12:00:01 PM"
 								},
 								{
 									"key": "endTime",
-									"value": "1662595199",
+									"value": "1662595199000",
 									"description": "Wednesday, September 7, 2022 11:59:59 PM"
 								}
 							]
@@ -276,7 +276,7 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "2"
+							"value": "182"
 						},
 						{
 							"key": "Connection",
@@ -284,7 +284,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 12 Sep 2022 15:47:07 GMT"
+							"value": "Mon, 12 Sep 2022 16:19:46 GMT"
 						},
 						{
 							"key": "Server",
@@ -296,11 +296,11 @@
 						},
 						{
 							"key": "x-mbx-used-weight",
-							"value": "1"
+							"value": "2"
 						},
 						{
 							"key": "x-mbx-used-weight-1m",
-							"value": "1"
+							"value": "2"
 						},
 						{
 							"key": "Strict-Transport-Security",
@@ -356,7 +356,7 @@
 						},
 						{
 							"key": "Via",
-							"value": "1.1 688d077d459126044c73cddb0faa7b3c.cloudfront.net (CloudFront)"
+							"value": "1.1 2e7b5f209c54b64c9f25912e30254e3c.cloudfront.net (CloudFront)"
 						},
 						{
 							"key": "X-Amz-Cf-Pop",
@@ -364,11 +364,11 @@
 						},
 						{
 							"key": "X-Amz-Cf-Id",
-							"value": "O-u324fSxgpLr5Zsdg-KAOYO_X0YLMTrnMbL56VZP7ulkSmnjtSYdA=="
+							"value": "NoKkZSaTsjdmtU5BtKQFknrtL5JqF-qjc5viB3L8KBRv00u4XoRAMw=="
 						}
 					],
 					"cookie": [],
-					"body": "[]"
+					"body": "[\n    [\n        1662508800000,\n        \"19107.80000000\",\n        \"50000.00000000\",\n        \"15668.40000000\",\n        \"19284.86000000\",\n        \"5892.50051000\",\n        1662595199999,\n        \"111900543.96863158\",\n        99487,\n        \"3814.98588700\",\n        \"72458500.50944591\",\n        \"0\"\n    ]\n]"
 				}
 			]
 		},
