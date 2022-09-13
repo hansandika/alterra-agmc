@@ -24,6 +24,8 @@ go.work
 .gitignore
 
 # Environments
+*/.env
+*/.env.*
 .env
 .venv
 env/
