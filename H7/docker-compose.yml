@@ -1,0 +1,47 @@
+version: '3.8'
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 8080:8080
+    depends_on:
+      - mysql
+    restart: on-failure
+    env_file:
+      - .env
+    environment:
+      - DB_USERNAME=root
+      - DB_PASSWORD=root
+      - DB_HOST=mysql
+      - DB_NAME=altera_tugas_h2
+      - DB_PORT=3306
+      - JWT_SECRET=secret   
+ 
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    # command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - 3308:3306
+    environment:
+      # Uncomment the following line if you want to have an empty root password
+      # - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=altera_tugas_h2
+    volumes:
+      - mysql:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+    environment:
+      - ADMINER_DEFAULT_SERVER=mysql
+
+volumes:
+  mysql: 

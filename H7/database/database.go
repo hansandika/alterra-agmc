@@ -2,6 +2,7 @@ package database
 
 import (
 	_ "database/sql"
+	"fmt"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
@@ -15,8 +16,11 @@ func initDB() *gorm.DB {
 	url := BaseConfig()
 	db, err := gorm.Open("mysql", url)
 	if err != nil {
+		fmt.Println(url)
+		fmt.Println("Ayam")
 		panic(err)
 	}
+	fmt.Println("Connected to DB")
 	return db
 }
 
